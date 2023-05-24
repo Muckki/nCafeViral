@@ -6,9 +6,13 @@ html {
 }
 body {
   box-shadow: 0.3px 0.3px 0.3px 0.3px;
+  height: 100%;
 }
 section {
-  display: flex;
+  height: calc(100% - 130px);
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-areas: "al ma ar";
 }
 header {
   height: 80px;
@@ -29,8 +33,7 @@ header {
 }
 
 .left-side {
-  width: 313px;
-  height: 766px;
+  grid-area: al;
   display: grid;
   grid-template-rows: 10% 5% 5% 10% 70%;
   grid-template-columns: 15% 15% 20% 50%;
@@ -75,17 +78,13 @@ header {
 }
 
 .middle-article {
-  width: 1256px;
-  height: 766px;
   border: 1px solid black;
+  grid-area: ma;
 }
 
 aside {
   box-sizing: border-box;
   border: 1px solid black;
-}
-.banner-add {
-  width: 311px;
 }
 thead th {
   border-bottom: 2px solid rgb(0, 0, 0);
@@ -135,9 +134,9 @@ header form {
 
 .my-page-button,
 .logout-button {
-  width: 5%;
+  width: 6%;
   position: relative;
-  left: 165px;
+  left: 13%;
   font-weight: bold;
 }
 
@@ -153,22 +152,17 @@ header form {
 }
 
 /* 배너 스타일 */
-.right-side .banner-add {
-  position: absolute;
-  top: 150px;
-  right: 20px;
-  width: 311px;
-  height: 766px;
+.right-side {
+  grid-area: ar;
+  border: 1px solid rgb(125, 125, 125);
+  background-color: #c2c2c2;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(125, 125, 125);
-  background-color: #c2c2c2;
 }
 
 /* 왼쪽 배너 스타일 */
 .left-side {
-  width: 311px;
   font-size: 14px;
   border-left: 2px solid #3e3e3e;
   font-weight: 600;
@@ -236,6 +230,7 @@ header form {
   font-weight: 900;
   font-size: 40px;
   padding: 12px;
+  margin: 0 auto;
 }
 
 .middle {
@@ -275,12 +270,12 @@ thead tr th {
   white-space: nowrap;
 }
 .bottom {
+  width: 2%;
+  height: 5%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 50px;
-  left: calc(50% - 173px);
+  margin: 0 auto;
+  margin-top: 8%;
 }
 
 .bottom-d {
@@ -296,14 +291,15 @@ thead tr th {
 }
 /* 메인페이지 스타일 */
 .mainBoard-display {
+  height: 100%;
   display: block;
 }
 .mainBoard {
+  height: 100%;
+
   display: grid;
-  grid-template-columns: repeat(4, 314px);
-  grid-template-rows: repeat(2, 1fr);
-  width: 1256px;
-  height: 766px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
   grid-template-areas:
     "btit1 btit2 btit3 btit4"
     "btit5 btit6 btit7 btit8";
@@ -363,7 +359,7 @@ thead tr th {
 }
 
 .select-box {
-  width: 311px;
+  width: 100%;
   height: 32px;
   background-color: rgb(248, 224, 7);
   border: none;
@@ -381,12 +377,12 @@ thead tr th {
 
 /* N 카페 바이럴 신청하기 스타일 */
 .NcafeViral-appliy {
-  width: 1254px;
-  height: 766px;
+  width: 100%;
+  height: 88.6%;
 }
 .appliy-button {
   float: right;
-  margin-right: 48px;
+  margin-right: 4%;
   padding: 8px;
   background-color: #489bf4;
   color: #fff;
@@ -395,6 +391,7 @@ thead tr th {
 }
 
 .appliy-middle-line {
+  padding: 2%;
   width: 92.5%;
   height: 80%;
   margin: 0 auto;
@@ -405,9 +402,7 @@ thead tr th {
 .appliy-top-ul-line {
   height: 30px;
   width: 95%;
-  position: relative;
-  top: 20px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   background-color: #3ecd79;
   display: flex;
 }
@@ -445,10 +440,9 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
+  margin-top: 1.5%;
 }
 
 .appliy-upline-first-li {
@@ -464,11 +458,11 @@ thead tr th {
   align-items: center;
 }
 .appliy-upline-first-li {
-  width: 276px;
+  width: 25%;
   border-bottom: none;
 }
 .appliy-upline-second-li {
-  width: calc(100% - 276px);
+  width: 75%;
   border-left: none;
   border-bottom: none;
 }
@@ -503,9 +497,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
 }
 
@@ -533,9 +525,8 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 1.5%;
 }
 .appliy-payment-topline-first-li {
   display: flex;
@@ -551,9 +542,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
 }
 
@@ -575,9 +564,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
 }
 
 .appliy-payment-downline-first-li,
@@ -603,18 +590,15 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 70px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 1.5%;
 }
 .appliy-request-middle-line {
   display: flex;
   background-color: #fff;
   width: 95%;
-  height: 34px;
-  position: relative;
-  top: 70px;
-  left: calc(50% - 550px);
+  height: 68px;
+  margin: 0 auto;
 }
 .appliy-request-topline-li {
   flex: 1;
@@ -634,15 +618,12 @@ thead tr th {
   border-bottom: none;
 }
 
-.appliy-request-middleline-li textarea {
+.appliy-request-middle-line textarea {
   width: 100%;
-  height: 150px;
+  height: 64px;
   font-size: 16px;
   font-weight: bold;
   color: #828282;
-  position: relative;
-  left: 0;
-  top: 66px;
   border: 1px solid black;
   border-bottom: none;
   resize: none;
@@ -652,9 +633,8 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 202px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 8px;
 }
 .appliy-request-downline-li {
   height: 34px;
@@ -665,7 +645,7 @@ thead tr th {
 }
 .appliy-request-downline-li span {
   text-align: center;
-  width: 1100px;
+  width: 100%;
 }
 
 #file {
@@ -678,21 +658,21 @@ thead tr th {
 
 /* 상태 페이지 스타일 */
 .status {
-  height: 766px;
+  height: 100%;
+  padding: 4%;
 }
 
 .status-comment-upline {
+  margin: 0 auto;
   background-color: #fff;
   width: 87%;
   height: 34px;
   position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
   display: flex;
 }
 
 .status-upline-first-li {
-  width: 272.5px;
+  width: 25%;
   border-bottom: none;
   border: 1px solid black;
   display: flex;
@@ -703,7 +683,7 @@ thead tr th {
   border-right: none;
 }
 .status-upline-second-li {
-  width: calc(100% - 272.5px);
+  width: 75%;
   border-left: none;
   border-bottom: none;
   border: 1px solid black;
@@ -717,10 +697,8 @@ thead tr th {
   background-color: #fff;
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
   display: flex;
+  margin: 0 auto;
 }
 .status-downline-first-li,
 .status-downline-second-li,
@@ -743,9 +721,8 @@ thead tr th {
   background-color: #fff;
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -756,9 +733,7 @@ thead tr th {
 .status-payment-middleline {
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -782,9 +757,7 @@ thead tr th {
 .status-payment-downline {
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
   border: 1px solid black;
   background-color: #fff;
@@ -804,9 +777,9 @@ thead tr th {
   justify-content: center;
 }
 .sortable {
-  position: absolute;
-  bottom: calc(50% - 11px);
-  right: calc(25% - 60px);
+  margin-right: 6.5%;
+  margin-top: 5%;
+  float: right;
   width: 160px;
   height: 40px;
   border-radius: 4px;
@@ -816,9 +789,7 @@ thead tr th {
   background-color: #fff;
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 168px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -829,9 +800,8 @@ thead tr th {
 .status-statue-topline {
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 176px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -850,9 +820,7 @@ thead tr th {
 .status-statue-middleline {
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 176px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -876,9 +844,7 @@ thead tr th {
 .status-statue-downline {
   width: 87%;
   height: 34px;
-  position: relative;
-  top: 176px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -922,10 +888,10 @@ thead tr th {
 
 /* 의뢰하기 탭 */
 .request-tab {
-  width: 1254px;
-  height: 766px;
+  height: 88.6%;
 }
 .request-middle-line {
+  padding: 3%;
   width: 92.5%;
   height: 90%;
   margin: 0 auto;
@@ -935,9 +901,7 @@ thead tr th {
 .request-top-ul-line {
   height: 34px;
   width: 95%;
-  position: relative;
-  top: 20px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   background-color: #fff;
 }
 .request-top-ul-line li {
@@ -952,9 +916,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
 }
 .request-upline-first-li,
@@ -979,11 +941,9 @@ thead tr th {
 
 .request-comment-downline {
   background-color: #fff;
+  margin: 0 auto;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 36px;
-  left: calc(50% - 550px);
   display: flex;
 }
 
@@ -1011,9 +971,8 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 2%;
 }
 .request-payment-topline-first-li {
   display: flex;
@@ -1029,9 +988,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
   display: flex;
 }
 
@@ -1053,9 +1010,7 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 52px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
 }
 
 .request-payment-downline-first-li,
@@ -1081,18 +1036,15 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 70px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 2%;
 }
 .request-request-middle-line {
   display: flex;
   background-color: #fff;
   width: 95%;
-  height: 34px;
-  position: relative;
-  top: 70px;
-  left: calc(50% - 550px);
+  height: 64px;
+  margin: 0 auto;
 }
 .request-request-topline-li {
   flex: 1;
@@ -1116,13 +1068,10 @@ thead tr th {
 }
 .request-request-middleline-li textarea {
   width: 100%;
-  height: 150px;
+  height: 64px;
   font-size: 16px;
   font-weight: bold;
   color: #828282;
-  position: relative;
-  left: 0;
-  top: 66px;
   border: 1px solid black;
   border-bottom: none;
   resize: none;
@@ -1132,9 +1081,8 @@ thead tr th {
   background-color: #fff;
   width: 95%;
   height: 34px;
-  position: relative;
-  top: 203px;
-  left: calc(50% - 550px);
+  margin: 0 auto;
+  margin-top: 8px;
 }
 .request-request-downline-li {
   height: 34px;
@@ -1146,7 +1094,7 @@ thead tr th {
 
 .request-request-downline-li span {
   text-align: center;
-  width: 1100px;
+  width: 100%;
 }
 
 #file {
