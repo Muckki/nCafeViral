@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>건바이건</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <p class="logo-text"><a href="index.html">건바이건</a></p>
+      <form>
+        <label for="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="내용을 입력해주세요" />
+          <button class="search-button">검색 / 게시판 찾기</button>
+        </label>
+      </form>
+      <a href="#" class="my-page-button">마이페이지 |</a>
+      <a href="#" class="logout-button">로그아웃</a>
+    </header>
+    <nav>
+      <ul class="nav-ul">
+        <li class="notice html-in">공지사항</li>
+        <li></li>
+        <li class="html-in">이벤트</li>
+        <li></li>
+        <li class="html-in">컨설팅 문의</li>
+        <li></li>
+        <li class="html-in">고객 센터</li>
+        <li></li>
+        <li class="html-in">마이페이지</li>
+        <li></li>
+        <li class="html-in">TO-DO</li>
+        <li></li>
+      </ul>
+    </nav>
+    <section>
+      <aside class="left-side">
+        <div class="member-name">ㅇㅇㅇ회원님</div>
+        <div class="point-left">잔여 포인트</div>
+        <div class="point-own">1,000,000 포인트</div>
+        <div class="in-now">진행중</div>
+        <div class="now-count">3건</div>
+
+        <a href="#" class="charge-button"> <span> 충전하기</span></a>
+        <a href="#" class="withdraw-button"> <span> 출금하기</span></a>
+
+        <div class="banner-add">배너 광고</div>
+      </aside>
+      <article class="middle-article">
+        <div class="NcafeViral-appliy">
+          <div class="appliy-top-line">
+            <div class="top">N 카페 바이럴</div>
+            <a href="#" class="appliy-button">신청 하기</a>
+          </div>
+          <div class="appliy-middle-line">
+            <ul class="appliy-top-ul-line">
+              <li class="appliy-li-first">의료</li>
+              <li class="appliy-li-second">게시글: 진행중(10/30)</li>
+              <li class="appliy-li-third appliy-end">댓글: 마감(10/10)</li>
+              <li class="appliy-li-fourth">가이드/원고</li>
+              <li class="appliy-li-fifth">작성자: 클라이언트</li>
+            </ul>
+
+            <ul class="appliy-comment-upline">
+              <li class="appliy-upline-first-li">제목</li>
+              <li class="appliy-upline-second-li">
+                <input
+                  type="text"
+                  id="appliy-text"
+                  class="appliy-text-title"
+                  placeholder="제목을 입력해주세요" />
+              </li>
+            </ul>
+            <ul class="appliy-comment-downline">
+              <li class="appliy-downline-first-li">총 비용</li>
+              <li class="appliy-downline-second-li">
+                <input
+                  type="text"
+                  id="appliy-cost"
+                  class="appliy-text-cost"
+                  placeholder="100,000원" />
+              </li>
+              <li class="appliy-downline-third-li">기간</li>
+              <li class="appliy-downline-fourth-li">
+                <input
+                  type="text"
+                  id="appliy-long"
+                  class="appliy-text-long"
+                  placeholder="21/12/05 ~ 21/12/07" />
+              </li>
+            </ul>
+
+            <ul class="appliy-payment-topline">
+              <li class="appliy-payment-topline-first-li">비용 세부 사항</li>
+            </ul>
+            <ul class="appliy-payment-middleline">
+              <li class="appliy-payment-middleline-first-li">
+                <label for="comment"
+                  ><input type="checkbox" name="comment" id="comment" />
+                  댓글</label
+                >
+              </li>
+              <li class="appliy-payment-middleline-second-li">
+                <label for="post"
+                  ><input type="checkbox" name="post" id="post" />게시글</label
+                >
+              </li>
+            </ul>
+            <ul class="appliy-payment-downline">
+              <li class="appliy-payment-downline-first-li">금액 / 수량</li>
+              <li class="appliy-payment-downline-second-li">
+                <input
+                  type="text"
+                  id="appliy-comment-cost"
+                  class="appliy-text-comment-cost"
+                  placeholder="1,000원 / 10개" />
+              </li>
+              <li class="appliy-payment-downline-third-li">금액/수량</li>
+              <li class="appliy-payment-downline-fourth-li">
+                <input
+                  type="text"
+                  id="appliy-post-cost"
+                  class="appliy-text-post-cost"
+                  placeholder="30,000원 / 30개" />
+              </li>
+            </ul>
+            <ul class="appliy-request-top-line">
+              <li class="appliy-request-topline-li">가이드 내용 및 요청사항</li>
+            </ul>
+            <ul class="appliy-request-middle-line">
+              <li class="appliy-request-middleline-li">
+                <textarea
+                  name="request"
+                  id="request-textarea"
+                  cols="30"
+                  rows="15"
+                  placeholder="가이드 내용 및 요청사항을 입력하세요"></textarea>
+              </li>
+            </ul>
+            <ul class="appliy-request-bottom-line">
+              <li class="appliy-request-downline-li">
+                <span>첨부파일</span>
+                <label for="file" class="file-add-button"
+                  ><img src="assets/svg/plus-frame-svgrepo-com.svg" alt="추가"
+                /></label>
+                <input type="file" name="request-file" id="file" />
+              </li>
+              <li id="attachment-container">
+                <div class="attachment-box appliy-attachment">
+                  <div class="attachment-element">
+                    <span
+                      >첨부 파일:
+                      <span id="attached-file-name">첨부파일명.jpg</span></span
+                    >
+                    <button class="remove-attachment-button">✖</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <aside class="right-side">
+        <div class="banner-add">배너 광고</div>
+      </aside>
+    </section>
+  </body>
+</html>

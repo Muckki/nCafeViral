@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>건바이건</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <p class="logo-text"><a href="index.html">건바이건</a></p>
+      <form>
+        <label for="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="내용을 입력해주세요" />
+          <button class="search-button">검색 / 게시판 찾기</button>
+        </label>
+      </form>
+      <a href="#" class="my-page-button">마이페이지 |</a>
+      <a href="#" class="logout-button">로그아웃</a>
+    </header>
+    <nav>
+      <ul class="nav-ul">
+        <li class="notice html-in">공지사항</li>
+        <li></li>
+        <li class="html-in">이벤트</li>
+        <li></li>
+        <li class="html-in">컨설팅 문의</li>
+        <li></li>
+        <li class="html-in">고객 센터</li>
+        <li></li>
+        <li class="html-in">마이페이지</li>
+        <li></li>
+        <li class="html-in">TO-DO</li>
+        <li></li>
+      </ul>
+    </nav>
+    <section>
+      <aside class="left-side">
+        <div class="member-name">ㅇㅇㅇ회원님</div>
+        <div class="point-left">잔여 포인트</div>
+        <div class="point-own">1,000,000 포인트</div>
+        <div class="in-now">진행중</div>
+        <div class="now-count">3건</div>
+
+        <a href="#" class="charge-button"> <span> 충전하기</span></a>
+        <a href="#" class="withdraw-button"> <span> 출금하기</span></a>
+
+        <div class="banner-add">배너 광고</div>
+      </aside>
+      <article class="middle-article">
+        <div class="status">
+          <ul class="status-comment-upline">
+            <li class="status-upline-first-li">제목</li>
+            <li class="status-upline-second-li">댓글작업만 부탁드려요</li>
+          </ul>
+          <ul class="status-comment-downline">
+            <li class="status-downline-first-li">총 비용</li>
+            <li class="status-downline-second-li">910,000원</li>
+            <li class="status-downline-third-li">기간</li>
+            <li class="status-downline-fourth-li">21/12/05 ~ 21/12/07</li>
+          </ul>
+
+          <ul class="status-payment-topline">
+            <li class="status-payment-topline-first-li">비용 세부 사항</li>
+          </ul>
+          <ul class="status-payment-middleline">
+            <li class="status-payment-middleline-first-li">댓글</li>
+            <li class="status-payment-middleline-second-li">게시글</li>
+          </ul>
+          <ul class="status-payment-downline">
+            <li class="status-payment-downline-first-li">금액 / 수량</li>
+            <li class="status-payment-downline-second-li">1,000원/10개</li>
+            <li class="status-payment-downline-third-li">금액/수량</li>
+            <li class="status-payment-downline-fourth-li">30,000원/30개</li>
+          </ul>
+          <select name="sortable" class="sortable" id="sortable">
+            <option value="view-all" selected>전체보기</option>
+            <option value="view-sort">오름차순</option>
+            <option value="view-sort-reverse">내림차순</option>
+          </select>
+          <ul class="status-statue-topline status-lines">
+            <li class="status-statue-topline-first-li status-lines">
+              작업 현황
+            </li>
+          </ul>
+          <ul class="status-statue-middleline status-lines">
+            <li class="status-statue-middleline-first-li status-lines">댓글</li>
+            <li class="status-statue-middleline-second-li status-lines">
+              게시글
+            </li>
+          </ul>
+          <ul class="status-statue-downline status-lines">
+            <li class="status-statue-downline-first-li status-lines">번호</li>
+            <li class="status-statue-downline-second-li status-lines">현황</li>
+            <li class="status-statue-downline-third-li status-lines">번호</li>
+            <li class="status-statue-downline-fourth-li status-lines">현황</li>
+          </ul>
+          <ul class="status-statue-downline status-lines">
+            <li class="status-statue-downline-first-li status-lines">1</li>
+            <li class="status-statue-downline-second-li status-lines">
+              대기중
+            </li>
+            <li class="status-statue-downline-third-li status-lines">1</li>
+            <li class="status-statue-downline-fourth-li status-lines">
+              대기중
+            </li>
+          </ul>
+          <ul class="status-statue-downline status-lines">
+            <li class="status-statue-downline-first-li status-lines">2</li>
+            <li
+              class="status-statue-downline-second-li assign-complete status-lines">
+              배정 완료
+            </li>
+            <li class="status-statue-downline-third-li status-lines">2</li>
+            <li class="status-statue-downline-fourth-li status-lines">
+              대기중
+            </li>
+          </ul>
+          <ul class="status-statue-downline status-lines">
+            <li class="status-statue-downline-first-li status-lines">3</li>
+            <li class="status-statue-downline-second-li status-lines">
+              대기중
+            </li>
+            <li class="status-statue-downline-third-li status-lines">3</li>
+            <li
+              class="status-statue-downline-fourth-li assign-complete status-lines">
+              배정 완료
+            </li>
+          </ul>
+          <ul class="status-statue-downline status-lines">
+            <li class="status-statue-downline-first-li status-lines">4</li>
+            <li
+              class="status-statue-downline-second-li task-complete status-lines">
+              작업 완료
+            </li>
+            <li class="status-statue-downline-third-li status-lines">4</li>
+            <li class="status-statue-downline-fourth-li status-lines">
+              대기중
+            </li>
+          </ul>
+          <ul class="status-statue-downline statue-last status-lines">
+            <li class="status-statue-downline-first-li status-lines">5</li>
+            <li class="status-statue-downline-second-li status-lines">
+              대기중
+            </li>
+            <li class="status-statue-downline-third-li status-lines">5</li>
+            <li
+              class="status-statue-downline-fourth-li task-complete status-lines">
+              작업 완료
+            </li>
+          </ul>
+          <div class="bottom">
+            <a href="#" class="bottom-d left-arrow"><</a>
+            <a href="#" class="bottom-d num on">1</a>
+            <a href="#" class="bottom-d num">2</a>
+            <a href="#" class="bottom-d num">3</a>
+            <a href="#" class="bottom-d num">4</a>
+            <a href="#" class="bottom-d right-arrow">></a>
+          </div>
+        </div>
+      </article>
+      <aside class="right-side">
+        <div class="banner-add">배너 광고</div>
+      </aside>
+    </section>
+  </body>
+</html>

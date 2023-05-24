@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>건바이건</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <p class="logo-text"><a href="index.html">건바이건</a></p>
+      <form>
+        <label for="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="내용을 입력해주세요" />
+          <button class="search-button">검색 / 게시판 찾기</button>
+        </label>
+      </form>
+      <a href="#" class="my-page-button">마이페이지 |</a>
+      <a href="#" class="logout-button">로그아웃</a>
+    </header>
+    <nav>
+      <ul class="nav-ul">
+        <li class="notice html-in">공지사항</li>
+        <li></li>
+        <li class="html-in">이벤트</li>
+        <li></li>
+        <li class="html-in">컨설팅 문의</li>
+        <li></li>
+        <li class="html-in">고객 센터</li>
+        <li></li>
+        <li class="html-in">마이페이지</li>
+        <li></li>
+        <li class="html-in">TO-DO</li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <section>
+      <aside class="left-side">
+        <div class="member-name">ㅇㅇㅇ회원님</div>
+        <div class="point-left">잔여 포인트</div>
+        <div class="point-own">1,000,000 포인트</div>
+        <div class="in-now">진행중</div>
+        <div class="now-count">3건</div>
+
+        <a href="#" class="charge-button"> <span> 충전하기</span></a>
+        <a href="#" class="withdraw-button"> <span> 출금하기</span></a>
+
+        <div class="banner-add">배너 광고</div>
+      </aside>
+      <article class="middle-article">
+        <div class="request-tab">
+          <div class="request-top-line"></div>
+          <div class="request-middle-line">
+            <ul class="request-top-ul-line">
+              <li class="request-li-first">의뢰 내용 작성하기</li>
+            </ul>
+
+            <ul class="request-comment-upline">
+              <li class="request-upline-first-li">제목</li>
+              <li class="request-upline-second-li">
+                <input
+                  type="text"
+                  id="request-text"
+                  class="request-text-title"
+                  placeholder="제목을 입력해주세요" />
+              </li>
+            </ul>
+            <ul class="request-comment-downline">
+              <li class="request-downline-first-li">총 비용</li>
+              <li class="request-downline-second-li">
+                <input
+                  type="text"
+                  id="request-cost"
+                  class="request-text-cost"
+                  placeholder="100,000원" />
+              </li>
+              <li class="request-downline-third-li">기간</li>
+              <li class="request-downline-fourth-li">
+                <input
+                  type="text"
+                  id="request-long"
+                  class="request-text-long"
+                  placeholder="21/12/05 ~ 21/12/07" />
+              </li>
+            </ul>
+
+            <ul class="request-payment-topline">
+              <li class="request-payment-topline-first-li">비용 세부 사항</li>
+            </ul>
+            <ul class="request-payment-middleline">
+              <li class="request-payment-middleline-first-li">
+                <label for="comment"
+                  ><input type="checkbox" name="comment" id="comment" />
+                  댓글</label
+                >
+              </li>
+              <li class="request-payment-middleline-second-li">
+                <label for="post"
+                  ><input type="checkbox" name="post" id="post" />게시글</label
+                >
+              </li>
+            </ul>
+            <ul class="request-payment-downline">
+              <li class="request-payment-downline-first-li">금액 / 수량</li>
+              <li class="request-payment-downline-second-li">
+                <input
+                  type="text"
+                  id="request-comment-cost"
+                  class="request-text-comment-cost"
+                  placeholder="1,000원 / 10개" />
+              </li>
+              <li class="request-payment-downline-third-li">금액/수량</li>
+              <li class="request-payment-downline-fourth-li">
+                <input
+                  type="text"
+                  id="request-post-cost"
+                  class="request-text-post-cost"
+                  placeholder="30,000원 / 30개" />
+              </li>
+            </ul>
+            <ul class="request-request-top-line">
+              <li class="request-request-topline-li">
+                가이드 내용 및 요청사항
+              </li>
+            </ul>
+            <ul class="request-request-middle-line">
+              <li class="request-request-middleline-li">
+                <textarea
+                  name="request"
+                  id="request-textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="가이드 내용 및 요청사항을 입력하세요"></textarea>
+              </li>
+            </ul>
+            <ul class="request-request-bottom-line">
+              <li class="request-request-downline-li">
+                <span>첨부파일</span>
+                <label for="file" class="file-add-button"
+                  ><img src="assets/svg/plus-frame-svgrepo-com.svg" alt="추가"
+                /></label>
+                <input type="file" name="request-file" id="file" />
+              </li>
+              <li id="attachment-container">
+                <div class="attachment-box">
+                  <div class="attachment-element">
+                    <span
+                      >첨부 파일:
+                      <span id="attached-file-name">첨부파일명.jpg</span></span
+                    >
+                    <button class="remove-attachment-button">✖</button>
+                  </div>
+                </div>
+              </li>
+              <a href="#" class="request-button">의뢰 하기</a>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <aside class="right-side">
+        <div class="banner-add">배너 광고</div>
+      </aside>
+    </section>
+  </body>
+</html>
